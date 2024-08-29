@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
+import "./Header.css"
 
 const Header = () => {
     const navLinks = <>
-        <li><NavLink to="/statistics">Statistics</NavLink></li>
+        <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/applied">Applied Jobs</NavLink></li>
         <li><NavLink to="/blog">Blog</NavLink></li>
     </>
@@ -36,7 +37,7 @@ const Header = () => {
                 {navLinks}
             </div>
             <div className="navbar-end">
-                <a className="btn">Start applying</a>
+                <a className="btn bg-[#9873FF]">Start applying</a>
             </div>
         </div>
     );
